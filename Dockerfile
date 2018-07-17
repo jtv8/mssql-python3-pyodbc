@@ -29,10 +29,10 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && apt-get install -y locales \
     && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip3
 
 # install SQL Server Python SQL Server connector module - pyodbc
-RUN pip install pyodbc
+RUN pip3 install pyodbc
 
 # install additional utilities
 RUN apt-get update && apt-get install gettext nano vim -y
