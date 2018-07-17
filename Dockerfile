@@ -29,7 +29,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && apt-get install -y locales \
     && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen
-RUN pip3 install --upgrade pip3
+RUN pip3 install --upgrade pip
 
 # install SQL Server Python SQL Server connector module - pyodbc
 RUN pip3 install pyodbc
