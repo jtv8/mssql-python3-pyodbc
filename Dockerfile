@@ -1,6 +1,6 @@
 # mssql-python3-pyodbc
 # Python runtime with pyodbc to connect to SQL Server
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 # apt-get and system utilities
 RUN apt-get update && apt-get install -y \
